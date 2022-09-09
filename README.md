@@ -51,7 +51,7 @@ This repo represents quite possibly the simplest and stupidest kit extension tha
 * Now that `exts` folder was added to the search you can add new extensions to this folder and they will be automatically found by the *App*.
 * Look at the *Console* window for the actual output of this extension. It also has a small button to open current log file.
 * All the same commands work on linux. Replace `.bat` with `.sh` and `\` with `/`.
-* Extension name is a folder name in `exts` folder, in this example: `omni.hello.world`. 
+* Extension name is a folder name in `exts` folder, in this example: `omni.hello.kitty`. 
 * Most important thing extension has is a config file: `extension.toml`, take a peek.
 
 ## Next Steps: Make another version of this extension use the UI
