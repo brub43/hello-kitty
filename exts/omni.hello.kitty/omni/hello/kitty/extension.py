@@ -37,4 +37,4 @@ class MyExtension(omni.ext.IExt):
 
     def on_shutdown(self):
         print(HELLO)
-        print("GOODBYE!)
+        print("GOODBYE!")
