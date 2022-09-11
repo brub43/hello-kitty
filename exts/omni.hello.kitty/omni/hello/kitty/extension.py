@@ -1,4 +1,5 @@
 import omni.ext
+import carb
 
 HELLO = """
 ⠀⠀⠀⠀⠀⢀⣠⣤⣤⣄⣀⡀⠀⠀⠀⠀⢀⣀⣀⣀⣠⣾⠋⠀⠀⠈⠹⣿⡟⠉⠀⠀⠀⠘⣿⡄⠀⠀⠀⠀⠀⠀
@@ -33,8 +34,8 @@ class MyExtension(omni.ext.IExt):
     # ext_id is current extension id. It can be used with extension manager to query additional information, like where
     # this extension is located on filesystem.
     def on_startup(self, ext_id):
-        print(HELLO)
+        carb.log_info(HELLO)
 
     def on_shutdown(self):
-        print(HELLO)
-        print("GOODBYE!")
+        carb.log_info(HELLO)
+        carb.log_info("GOODBYE!")
