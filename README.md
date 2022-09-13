@@ -45,6 +45,7 @@ This repo represents quite possibly the simplest and stupidest kit extension tha
 ![Extension Manager Window](/images/add-ext-search-path.png)
 
 5. Now you can find `omni.hello.kitty` extension in the top left search bar. Select and enable it.
+6. Look in the console window for the almost indescribable awesomeness and terror that is hello kitty.
 
 ### Few tips
 
