@@ -1,7 +1,7 @@
 import omni.ext
 import carb
 
-HELLO_BRAILE = """
+HELLO_BRAILLE = """
 ⠀⠀⠀⠀⠀⢀⣠⣤⣤⣄⣀⡀⠀⠀⠀⠀⢀⣀⣀⣀⣠⣾⠋⠀⠀⠈⠹⣿⡟⠉⠀⠀⠀⠘⣿⡄⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⢀⣾⠟⠉⠉⠉⠛⠻⢿⣶⠿⠿⠟⠛⠛⠛⣿⠇⠀⢠⣶⣶⣶⣿⣷⣦⣤⣀⣠⣤⣿⣷⣄⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⢸⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣿⠀⠀⢸⣿⣼⡿⠁⠀⠀⠙⣿⣯⡁⠀⠈⢿⡇⠀⠀⠀⠀
@@ -68,8 +68,8 @@ HELLO = """
 
 class MyExtension(omni.ext.IExt):
     def on_startup(self, ext_id):
-        carb.log_info(HELLO)
+        carb.log_warn(HELLO)
 
     def on_shutdown(self):
-        carb.log_info(HELLO)
-        carb.log_info("GOODBYE!")
+        carb.log_warn(HELLO_BRAILLE)
+        carb.log_warn("GOODBYE!")
